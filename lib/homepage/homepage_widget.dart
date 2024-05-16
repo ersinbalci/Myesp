@@ -48,6 +48,8 @@ class _HomepageWidgetState extends State<HomepageWidget>
         ],
       ),
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -142,7 +144,9 @@ class _HomepageWidgetState extends State<HomepageWidget>
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               8.0, 0.0, 0.0, 6.0),
                           child: FFButtonWidget(
-                            onPressed: () async {},
+                            onPressed: () {
+                              print('Button pressed ...');
+                            },
                             text: 'Math (Calculus)',
                             options: FFButtonOptions(
                               width: double.infinity,

@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'onboarding_model.dart';
 export 'onboarding_model.dart';
@@ -26,6 +27,11 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
     super.initState();
     _model = createModel(context, () => OnboardingModel());
 
+    // On page load action.
+    SchedulerBinding.instance.addPostFrameCallback((_) async {
+      context.goNamed('Homepage');
+    });
+
     animationsMap.addAll({
       'containerOnPageLoadAnimation1': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
@@ -44,6 +50,18 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
             duration: 400.0.ms,
             begin: const Offset(3.0, 3.0),
             end: const Offset(1.0, 1.0),
+          ),
+        ],
+      ),
+      'columnOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
           ),
         ],
       ),
@@ -108,6 +126,8 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
         ],
       ),
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -214,7 +234,8 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                             animationsMap['textOnPageLoadAnimation2']!),
                       ),
                     ],
-                  ),
+                  ).animateOnPageLoad(
+                      animationsMap['columnOnPageLoadAnimation']!),
                 ),
               ).animateOnPageLoad(
                   animationsMap['containerOnPageLoadAnimation1']!),
