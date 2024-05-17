@@ -98,9 +98,9 @@ class _HomepageWidgetState extends State<HomepageWidget>
                 alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Container(
                   width: 395.0,
-                  height: 946.0,
+                  height: 1112.0,
                   decoration: BoxDecoration(
-                    color: const Color(0xFFB7A230),
+                    color: const Color(0xFFF8D208),
                     image: DecorationImage(
                       fit: BoxFit.contain,
                       alignment: const AlignmentDirectional(0.0, -1.0),
@@ -142,7 +142,7 @@ class _HomepageWidgetState extends State<HomepageWidget>
                       children: [
                         Padding(
                           padding: const EdgeInsetsDirectional.fromSTEB(
-                              8.0, 0.0, 0.0, 6.0),
+                              6.0, 6.0, 6.0, 6.0),
                           child: FFButtonWidget(
                             onPressed: () {
                               print('Button pressed ...');
@@ -170,12 +170,96 @@ class _HomepageWidgetState extends State<HomepageWidget>
                         ),
                         Padding(
                           padding: const EdgeInsetsDirectional.fromSTEB(
-                              8.0, 0.0, 0.0, 6.0),
+                              6.0, 0.0, 6.0, 6.0),
                           child: FFButtonWidget(
                             onPressed: () {
                               print('Button pressed ...');
                             },
-                            text: 'Math (Calculus)',
+                            text: 'Chemistry',
+                            options: FFButtonOptions(
+                              width: double.infinity,
+                              height: 65.0,
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              color: const Color(0xFFF5FBF9),
+                              textStyle: FlutterFlowTheme.of(context)
+                                  .titleSmall
+                                  .override(
+                                    fontFamily: 'Plus Jakarta Sans',
+                                    color: const Color(0xFF151515),
+                                    letterSpacing: 0.0,
+                                  ),
+                              elevation: 0.0,
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              6.0, 0.0, 6.0, 6.0),
+                          child: FFButtonWidget(
+                            onPressed: () {
+                              print('Button pressed ...');
+                            },
+                            text: 'Physics',
+                            options: FFButtonOptions(
+                              width: double.infinity,
+                              height: 65.0,
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              color: const Color(0xFFF8FCFB),
+                              textStyle: FlutterFlowTheme.of(context)
+                                  .titleSmall
+                                  .override(
+                                    fontFamily: 'Plus Jakarta Sans',
+                                    color: const Color(0xFF151515),
+                                    letterSpacing: 0.0,
+                                  ),
+                              elevation: 0.0,
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              6.0, 0.0, 6.0, 6.0),
+                          child: FFButtonWidget(
+                            onPressed: () {
+                              print('Button pressed ...');
+                            },
+                            text: 'Economics',
+                            options: FFButtonOptions(
+                              width: double.infinity,
+                              height: 65.0,
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              color: const Color(0xFFF3F9F7),
+                              textStyle: FlutterFlowTheme.of(context)
+                                  .titleSmall
+                                  .override(
+                                    fontFamily: 'Plus Jakarta Sans',
+                                    color: const Color(0xFF151515),
+                                    letterSpacing: 0.0,
+                                  ),
+                              elevation: 0.0,
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              6.0, 0.0, 6.0, 6.0),
+                          child: FFButtonWidget(
+                            onPressed: () {
+                              print('Button pressed ...');
+                            },
+                            text: 'Civil Engineering',
                             options: FFButtonOptions(
                               width: double.infinity,
                               height: 65.0,
@@ -203,7 +287,7 @@ class _HomepageWidgetState extends State<HomepageWidget>
                             onPressed: () {
                               print('Button pressed ...');
                             },
-                            text: 'Math (Calculus)',
+                            text: 'Business Administration',
                             options: FFButtonOptions(
                               width: double.infinity,
                               height: 65.0,
@@ -211,91 +295,7 @@ class _HomepageWidgetState extends State<HomepageWidget>
                                   0.0, 0.0, 0.0, 0.0),
                               iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
-                              color: const Color(0xFFA7B2AE),
-                              textStyle: FlutterFlowTheme.of(context)
-                                  .titleSmall
-                                  .override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    color: const Color(0xFF151515),
-                                    letterSpacing: 0.0,
-                                  ),
-                              elevation: 0.0,
-                              borderRadius: BorderRadius.circular(10.0),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              8.0, 0.0, 0.0, 6.0),
-                          child: FFButtonWidget(
-                            onPressed: () {
-                              print('Button pressed ...');
-                            },
-                            text: 'Math (Calculus)',
-                            options: FFButtonOptions(
-                              width: double.infinity,
-                              height: 65.0,
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              color: const Color(0xFFA7B2AE),
-                              textStyle: FlutterFlowTheme.of(context)
-                                  .titleSmall
-                                  .override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    color: const Color(0xFF151515),
-                                    letterSpacing: 0.0,
-                                  ),
-                              elevation: 0.0,
-                              borderRadius: BorderRadius.circular(10.0),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              8.0, 0.0, 0.0, 6.0),
-                          child: FFButtonWidget(
-                            onPressed: () {
-                              print('Button pressed ...');
-                            },
-                            text: 'Civil Engineering',
-                            options: FFButtonOptions(
-                              width: double.infinity,
-                              height: 65.0,
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              color: const Color(0xFFA7B2AE),
-                              textStyle: FlutterFlowTheme.of(context)
-                                  .titleSmall
-                                  .override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    color: const Color(0xFF151515),
-                                    letterSpacing: 0.0,
-                                  ),
-                              elevation: 0.0,
-                              borderRadius: BorderRadius.circular(10.0),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              8.0, 0.0, 0.0, 6.0),
-                          child: FFButtonWidget(
-                            onPressed: () {
-                              print('Button pressed ...');
-                            },
-                            text: 'Math (Calculus)',
-                            options: FFButtonOptions(
-                              width: double.infinity,
-                              height: 65.0,
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              color: const Color(0xFFA7B2AE),
+                              color: const Color(0xFFFBFCFB),
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(

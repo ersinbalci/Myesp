@@ -29,7 +29,16 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
 
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
-      context.goNamed('Homepage');
+      context.goNamed(
+        'Homepage',
+        extra: <String, dynamic>{
+          kTransitionInfoKey: const TransitionInfo(
+            hasTransition: true,
+            transitionType: PageTransitionType.rightToLeft,
+            duration: Duration(milliseconds: 3),
+          ),
+        },
+      );
     });
 
     animationsMap.addAll({
@@ -203,7 +212,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                         padding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 44.0, 0.0, 0.0),
                         child: Text(
-                          'Welcome!',
+                          'Welcome',
                           style: FlutterFlowTheme.of(context)
                               .displaySmall
                               .override(
@@ -220,7 +229,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                         padding: const EdgeInsetsDirectional.fromSTEB(
                             44.0, 8.0, 44.0, 0.0),
                         child: Text(
-                          'Thanks for joining! Access or create your account below, and get started on your journey!',
+                          'Let\'s get started...',
                           textAlign: TextAlign.center,
                           style:
                               FlutterFlowTheme.of(context).labelMedium.override(
